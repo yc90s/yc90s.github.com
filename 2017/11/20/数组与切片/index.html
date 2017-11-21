@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://yc90s.github.io">
-  <title>yc90s的博客</title>
+  <title>数组与切片 | yc90s的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="yc90s的博客">
-<meta property="og:url" content="https://yc90s.github.io/index.html">
+  <meta name="description" content="数组定义数组是一组同类型数据的集合，它是值类型，通过从0开始的下标索引访问元素值。初始化后数组长度是固定的，无法修改其长度。当作为方法的入参传入时將复制一份数组而不是引用同一指针。数组的长度也是其类型的一部分。 初始化 长度为5的数组，其元素值依次为：1, 2, 3, 4, 5 1[5]int&amp;#123;1, ">
+<meta name="keywords" content="golang">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数组与切片">
+<meta property="og:url" content="https://yc90s.github.io/2017/11/20/数组与切片/index.html">
 <meta property="og:site_name" content="yc90s的博客">
+<meta property="og:description" content="数组定义数组是一组同类型数据的集合，它是值类型，通过从0开始的下标索引访问元素值。初始化后数组长度是固定的，无法修改其长度。当作为方法的入参传入时將复制一份数组而不是引用同一指针。数组的长度也是其类型的一部分。 初始化 长度为5的数组，其元素值依次为：1, 2, 3, 4, 5 1[5]int&amp;#123;1, 2, 3, 4, 5&amp;#125;  长度为5的数组，其元素值依次为：1, 2, 0, 0">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-11-21T03:43:31.311Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="yc90s的博客">
+<meta name="twitter:title" content="数组与切片">
+<meta name="twitter:description" content="数组定义数组是一组同类型数据的集合，它是值类型，通过从0开始的下标索引访问元素值。初始化后数组长度是固定的，无法修改其长度。当作为方法的入参传入时將复制一份数组而不是引用同一指针。数组的长度也是其类型的一部分。 初始化 长度为5的数组，其元素值依次为：1, 2, 3, 4, 5 1[5]int&amp;#123;1, 2, 3, 4, 5&amp;#125;  长度为5的数组，其元素值依次为：1, 2, 0, 0">
   
     <link rel="alternative" href="/atom.xml" title="yc90s的博客" type="application/atom+xml">
   
@@ -150,16 +155,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-数组与切片" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-数组与切片" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/20/数组与切片/">数组与切片</a>
+    <h1 class="article-title" itemprop="name">
+      数组与切片
     </h1>
   
 
@@ -237,16 +240,24 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/20/数组与切片/">展开全文 >></a>
-        </p>
-      
 
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2017/11/19/golang-gRPC安装/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">golang gRPC安装</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -261,104 +272,32 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-golang-gRPC安装" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/19/golang-gRPC安装/">golang gRPC安装</a>
-    </h1>
-  
-
-        
-        <a href="/2017/11/19/golang-gRPC安装/" class="archive-article-date">
-  	<time datetime="2017-11-19T05:10:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="安装gRPC-runtime"><a href="#安装gRPC-runtime" class="headerlink" title="安装gRPC runtime"></a>安装gRPC runtime</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">go get google.golang.org/grpc</span><br></pre></td></tr></table></figure>
-<p>如果不能翻墙，可以通过<a href="https://www.golangtc.com/download/package" target="_blank" rel="noopener">golang 中国</a>下载，將安装包解压到GOPATH/src目录下，然后执行<code>go install google.golang.org/grpc</code>安装</p>
-<h2 id="安装protobuf-buffer"><a href="#安装protobuf-buffer" class="headerlink" title="安装protobuf buffer"></a>安装protobuf buffer</h2><p><a href="https://github.com/google/protobuf/releases" target="_blank" rel="noopener">下载</a>protobuf安装包，解压后，编译</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">./configure</span><br><span class="line">make </span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure>
-<p>执行<code>protoc --version</code>验证有没有安装成功<br>如果报找不到动态链接库的错误，在/etc/ld.so.conf.d/目录下新建一个protoc.conf文件，將动态库的目录添加进去，再执行<code>sudo ldconfig</code></p>
-<h2 id="安装proto插件和库"><a href="#安装proto插件和库" class="headerlink" title="安装proto插件和库"></a>安装proto插件和库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">go get -u github.com/golang/protobuf/proto</span><br><span class="line">go get -u github.com/golang/protobuf/protoc-gen-go</span><br></pre></td></tr></table></figure>
-<p>安装完之后，需要將GOBIN添加进PATH路径<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;export PATH = $PATH:$GOBIN&quot; &gt;&gt; ~/.bashrc</span><br><span class="line">source ~/.bashrc</span><br></pre></td></tr></table></figure></p>
-<h2 id="示例程序"><a href="#示例程序" class="headerlink" title="示例程序"></a>示例程序</h2><h3 id="协议文件"><a href="#协议文件" class="headerlink" title="协议文件"></a>协议文件</h3><p>创建一个文件夹用来存放协议文件，protocol/helloworld.proto<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">syntax = &quot;proto3&quot;;</span><br><span class="line"></span><br><span class="line">option objc_class_prefix = &quot;HLW&quot;;</span><br><span class="line"></span><br><span class="line">package protocol;</span><br><span class="line"></span><br><span class="line">// The greeting service definition.</span><br><span class="line">service Greeter &#123;</span><br><span class="line">  // Sends a greeting</span><br><span class="line">  rpc SayHello (HelloRequest) returns (HelloReply) &#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// The request message containing the user&apos;s name.</span><br><span class="line">message HelloRequest &#123;</span><br><span class="line">  string name = 1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// The response message containing the greetings</span><br><span class="line">message HelloReply &#123;</span><br><span class="line">  string message = 1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>使用protoc命令生成go文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">protoc --go_out=plugins=grpc:. helloworld.proto</span><br></pre></td></tr></table></figure></p>
-<h3 id="服务器程序"><a href="#服务器程序" class="headerlink" title="服务器程序"></a>服务器程序</h3><p>server.go<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">package main</span><br><span class="line"></span><br><span class="line">import (</span><br><span class="line">	&quot;log&quot;</span><br><span class="line">	&quot;net&quot;</span><br><span class="line">	pb &quot;protocol&quot;</span><br><span class="line"></span><br><span class="line">	&quot;golang.org/x/net/context&quot;</span><br><span class="line">	&quot;google.golang.org/grpc&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">const (</span><br><span class="line">	port = &quot;:5001&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">type server struct&#123;&#125;</span><br><span class="line"></span><br><span class="line">func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloReply, error) &#123;</span><br><span class="line">	return &amp;pb.HelloReply&#123;Message: &quot;Hello &quot; + in.Name&#125;, nil</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">	lis, err := net.Listen(&quot;tcp&quot;, port)</span><br><span class="line">	if err != nil &#123;</span><br><span class="line">		log.Fatalf(&quot;failed to listen: %v&quot;, err)</span><br><span class="line">	&#125;</span><br><span class="line">	s := grpc.NewServer()</span><br><span class="line">	pb.RegisterGreeterServer(s, &amp;server&#123;&#125;)</span><br><span class="line">	s.Serve(lis)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h3 id="客户端程序"><a href="#客户端程序" class="headerlink" title="客户端程序"></a>客户端程序</h3><p>client.go<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">package main</span><br><span class="line"></span><br><span class="line">import (</span><br><span class="line">	&quot;log&quot;</span><br><span class="line">	&quot;os&quot;</span><br><span class="line"></span><br><span class="line">	&quot;golang.org/x/net/context&quot;</span><br><span class="line">	&quot;google.golang.org/grpc&quot;</span><br><span class="line">	pb &quot;protocol&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">const (</span><br><span class="line">	address     = &quot;localhost:5001&quot;</span><br><span class="line">	defaultName = &quot;world&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">	conn, err := grpc.Dial(address, grpc.WithInsecure())</span><br><span class="line">	if err != nil &#123;</span><br><span class="line">		log.Fatalf(&quot;did not connect: %v&quot;, err)</span><br><span class="line">	&#125;</span><br><span class="line">	defer conn.Close()</span><br><span class="line">	c := pb.NewGreeterClient(conn)</span><br><span class="line"></span><br><span class="line">	name := defaultName</span><br><span class="line">	if len(os.Args) &gt; 1 &#123;</span><br><span class="line">		name = os.Args[1]</span><br><span class="line">	&#125;</span><br><span class="line">	r, err := c.SayHello(context.Background(), &amp;pb.HelloRequest&#123;Name: name&#125;)</span><br><span class="line">	if err != nil &#123;</span><br><span class="line">		log.Fatalf(&quot;could not greet: %v&quot;, err)</span><br><span class="line">	&#125;</span><br><span class="line">	log.Printf(&quot;Greeting: %s&quot;, r.Message)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>先运行服务器，再运行客户端</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">go run server.go &amp;</span><br><span class="line">go run client.go</span><br></pre></td></tr></table></figure>
-<p>可以看到rpc调用成功</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">golang</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">gRPC</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/19/golang-gRPC安装/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#数组"><span class="toc-number">1.</span> <span class="toc-text">数组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#定义"><span class="toc-number">1.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#初始化"><span class="toc-number">1.2.</span> <span class="toc-text">初始化</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#切片"><span class="toc-number">2.</span> <span class="toc-text">切片</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#定义-1"><span class="toc-number">2.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#初始化-1"><span class="toc-number">2.2.</span> <span class="toc-text">初始化</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数组与切片区别"><span class="toc-number">3.</span> <span class="toc-text">数组与切片区别</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数组长度不可变，切片长度和容量都可变"><span class="toc-number">3.1.</span> <span class="toc-text">数组长度不可变，切片长度和容量都可变</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数组是值类型，而切片是引用类型"><span class="toc-number">3.2.</span> <span class="toc-text">数组是值类型，而切片是引用类型</span></a></li></ol></li></ol>
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
+  
+  
+  
 
   
+
+  
+
   
 
 
@@ -381,8 +320,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

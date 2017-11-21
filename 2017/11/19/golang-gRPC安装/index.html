@@ -5,21 +5,23 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | Sys</title>
+  <link rel="dns-prefetch" href="https://yc90s.github.io">
+  <title>golang gRPC安装 | yc90s的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troublesho">
+  <meta name="description" content="安装gRPC runtime1go get google.golang.org/grpc 如果不能翻墙，可以通过golang 中国下载，將安装包解压到GOPATH/src目录下，然后执行go install google.golang.org/grpc安装 安装protobuf buffer下载protobuf安装包，">
+<meta name="keywords" content="golang,gRPC">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/11/17/hello-world/index.html">
-<meta property="og:site_name" content="Sys">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:updated_time" content="2017-11-17T09:16:26.152Z">
+<meta property="og:title" content="golang gRPC安装">
+<meta property="og:url" content="https://yc90s.github.io/2017/11/19/golang-gRPC安装/index.html">
+<meta property="og:site_name" content="yc90s的博客">
+<meta property="og:description" content="安装gRPC runtime1go get google.golang.org/grpc 如果不能翻墙，可以通过golang 中国下载，將安装包解压到GOPATH/src目录下，然后执行go install google.golang.org/grpc安装 安装protobuf buffer下载protobuf安装包，解压后，编译 123./configuremake sudo make inst">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-11-21T03:42:07.487Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="golang gRPC安装">
+<meta name="twitter:description" content="安装gRPC runtime1go get google.golang.org/grpc 如果不能翻墙，可以通过golang 中国下载，將安装包解压到GOPATH/src目录下，然后执行go install google.golang.org/grpc安装 安装protobuf buffer下载protobuf安装包，解压后，编译 123./configuremake sudo make inst">
   
-    <link rel="alternative" href="/atom.xml" title="Sys" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="yc90s的博客" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -58,7 +60,9 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/archives">随笔</a></li>
+				<li><a href="/tags/distribute-system">分布式</a></li>
+	        
+				<li><a href="/tags/golang">GOLANG</a></li>
 	        
 			</ul>
 		</nav>
@@ -69,8 +73,6 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
-    			
             
     			
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
@@ -80,13 +82,11 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="https://github.com/yc90s" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/zhuan-jiao-8/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="mail" target="_blank" href="mailto:1050676515@qq.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
 		</nav>
@@ -116,29 +116,31 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/yc90s" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/zhuan-jiao-8/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="mail" target="_blank" href="mailto:1050676515@qq.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/archives">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/distribute-system">分布式</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/tags/golang">GOLANG</a></li>
 		        
 				</ul>
 			</nav>
@@ -153,35 +155,40 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-golang-gRPC安装" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      golang gRPC安装
     </h1>
   
 
         
-        <a href="/2017/11/17/hello-world/" class="archive-article-date">
-  	<time datetime="2017-11-17T09:16:26.152Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-17</time>
+        <a href="/2017/11/19/golang-gRPC安装/" class="archive-article-date">
+  	<time datetime="2017-11-19T05:10:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-19</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h2 id="安装gRPC-runtime"><a href="#安装gRPC-runtime" class="headerlink" title="安装gRPC runtime"></a>安装gRPC runtime</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">go get google.golang.org/grpc</span><br></pre></td></tr></table></figure>
+<p>如果不能翻墙，可以通过<a href="https://www.golangtc.com/download/package" target="_blank" rel="noopener">golang 中国</a>下载，將安装包解压到GOPATH/src目录下，然后执行<code>go install google.golang.org/grpc</code>安装</p>
+<h2 id="安装protobuf-buffer"><a href="#安装protobuf-buffer" class="headerlink" title="安装protobuf buffer"></a>安装protobuf buffer</h2><p><a href="https://github.com/google/protobuf/releases" target="_blank" rel="noopener">下载</a>protobuf安装包，解压后，编译</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">./configure</span><br><span class="line">make </span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure>
+<p>执行<code>protoc --version</code>验证有没有安装成功<br>如果报找不到动态链接库的错误，在/etc/ld.so.conf.d/目录下新建一个protoc.conf文件，將动态库的目录添加进去，再执行<code>sudo ldconfig</code></p>
+<h2 id="安装proto插件和库"><a href="#安装proto插件和库" class="headerlink" title="安装proto插件和库"></a>安装proto插件和库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">go get -u github.com/golang/protobuf/proto</span><br><span class="line">go get -u github.com/golang/protobuf/protoc-gen-go</span><br></pre></td></tr></table></figure>
+<p>安装完之后，需要將GOBIN添加进PATH路径<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;export PATH = $PATH:$GOBIN&quot; &gt;&gt; ~/.bashrc</span><br><span class="line">source ~/.bashrc</span><br></pre></td></tr></table></figure></p>
+<h2 id="示例程序"><a href="#示例程序" class="headerlink" title="示例程序"></a>示例程序</h2><h3 id="协议文件"><a href="#协议文件" class="headerlink" title="协议文件"></a>协议文件</h3><p>创建一个文件夹用来存放协议文件，protocol/helloworld.proto<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">syntax = &quot;proto3&quot;;</span><br><span class="line"></span><br><span class="line">option objc_class_prefix = &quot;HLW&quot;;</span><br><span class="line"></span><br><span class="line">package protocol;</span><br><span class="line"></span><br><span class="line">// The greeting service definition.</span><br><span class="line">service Greeter &#123;</span><br><span class="line">  // Sends a greeting</span><br><span class="line">  rpc SayHello (HelloRequest) returns (HelloReply) &#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// The request message containing the user&apos;s name.</span><br><span class="line">message HelloRequest &#123;</span><br><span class="line">  string name = 1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// The response message containing the greetings</span><br><span class="line">message HelloReply &#123;</span><br><span class="line">  string message = 1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>使用protoc命令生成go文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">protoc --go_out=plugins=grpc:. helloworld.proto</span><br></pre></td></tr></table></figure></p>
+<h3 id="服务器程序"><a href="#服务器程序" class="headerlink" title="服务器程序"></a>服务器程序</h3><p>server.go<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">package main</span><br><span class="line"></span><br><span class="line">import (</span><br><span class="line">	&quot;log&quot;</span><br><span class="line">	&quot;net&quot;</span><br><span class="line">	pb &quot;protocol&quot;</span><br><span class="line"></span><br><span class="line">	&quot;golang.org/x/net/context&quot;</span><br><span class="line">	&quot;google.golang.org/grpc&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">const (</span><br><span class="line">	port = &quot;:5001&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">type server struct&#123;&#125;</span><br><span class="line"></span><br><span class="line">func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloReply, error) &#123;</span><br><span class="line">	return &amp;pb.HelloReply&#123;Message: &quot;Hello &quot; + in.Name&#125;, nil</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">	lis, err := net.Listen(&quot;tcp&quot;, port)</span><br><span class="line">	if err != nil &#123;</span><br><span class="line">		log.Fatalf(&quot;failed to listen: %v&quot;, err)</span><br><span class="line">	&#125;</span><br><span class="line">	s := grpc.NewServer()</span><br><span class="line">	pb.RegisterGreeterServer(s, &amp;server&#123;&#125;)</span><br><span class="line">	s.Serve(lis)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="客户端程序"><a href="#客户端程序" class="headerlink" title="客户端程序"></a>客户端程序</h3><p>client.go<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">package main</span><br><span class="line"></span><br><span class="line">import (</span><br><span class="line">	&quot;log&quot;</span><br><span class="line">	&quot;os&quot;</span><br><span class="line"></span><br><span class="line">	&quot;golang.org/x/net/context&quot;</span><br><span class="line">	&quot;google.golang.org/grpc&quot;</span><br><span class="line">	pb &quot;protocol&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">const (</span><br><span class="line">	address     = &quot;localhost:5001&quot;</span><br><span class="line">	defaultName = &quot;world&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">	conn, err := grpc.Dial(address, grpc.WithInsecure())</span><br><span class="line">	if err != nil &#123;</span><br><span class="line">		log.Fatalf(&quot;did not connect: %v&quot;, err)</span><br><span class="line">	&#125;</span><br><span class="line">	defer conn.Close()</span><br><span class="line">	c := pb.NewGreeterClient(conn)</span><br><span class="line"></span><br><span class="line">	name := defaultName</span><br><span class="line">	if len(os.Args) &gt; 1 &#123;</span><br><span class="line">		name = os.Args[1]</span><br><span class="line">	&#125;</span><br><span class="line">	r, err := c.SayHello(context.Background(), &amp;pb.HelloRequest&#123;Name: name&#125;)</span><br><span class="line">	if err != nil &#123;</span><br><span class="line">		log.Fatalf(&quot;could not greet: %v&quot;, err)</span><br><span class="line">	&#125;</span><br><span class="line">	log.Printf(&quot;Greeting: %s&quot;, r.Message)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>先运行服务器，再运行客户端</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">go run server.go &amp;</span><br><span class="line">go run client.go</span><br></pre></td></tr></table></figure>
+<p>可以看到rpc调用成功</p>
 
       
 
@@ -190,61 +197,25 @@
     <div class="article-info article-info-index">
       
       
-      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">golang</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">gRPC</a>
+        		</li>
+      		
+		</ul>
+	</div>
 
       
 
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
 
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/11/17/hello-world/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
@@ -252,6 +223,20 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2017/11/20/数组与切片/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          数组与切片
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -330,8 +315,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
     
       
-      
-      
     
       
       
@@ -343,15 +326,13 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -370,6 +351,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">golang</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">gRPC</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -414,38 +403,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     	</section>
     
 
-    
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
     
 
     
